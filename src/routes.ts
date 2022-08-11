@@ -13,7 +13,7 @@ const itemsController = new ItemsController();
 routes.get('/items', itemsController.index);
 
 routes.post('/points', pointsController.create); // create: criar
-routes.get('/points/', pointsController.index); // index: mostrar todos
+routes.get('/points', pointsController.index); // index: mostrar todos
 routes.get('/points/:id', pointsController.show); // show: mostrar um
 
 
